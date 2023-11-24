@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    /* primary color  */
+    --softRed: hsl(10,79%,65%);
+    --hoverRed: hsla(10, 79%, 65%, 0.733);
+    --cyan: hsl(186, 34%, 60%);
+    --hoverCyan: hsla(186, 34%, 60%, 0.76);
+
+    /* Neutral color  */
+    --darkBrown: hsl(25, 47%, 65%);
+    --mediumBrown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --veryPaleOrange: hsl(33,100%, 98%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--cream);
+}
+
+.header {
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--softRed);
+    color: #fff;
+}
+.header p{
+    font-size: 35px;
+    margin: 5px 0px;
+    font-weight: 500;
+}
+.header p:nth-child(1){
+    font-weight: 400;
+    font-size: 18px; 
+}
+.wrapper{
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 30px;
+}
+.wrapper h2{
+    margin: 10px 20px;
+    font-size: 40px;
+    color: rgb(54, 33, 4);
+}
+.bars {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.bar-sam {
+    height: 300px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.bar-go {
+    border-radius: 5px;
+    width: 45px;
+    background-color: var(--softRed);
+    cursor: pointer;
+}
+
+.active {
+    background-color: var(--cyan);
+}
+
+.perCent {
+    display: none;
+    margin-bottom: 10px;
+    background-color: rgb(54, 33, 4);
+    padding: 5px;
+    color: #fff;
+    border-radius: 5px;
+    width: 150%;
+}
+
+.dayName {
+    margin: 10px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mediumBrown);
+}
+
+.bar-sam:hover .perCent {
+    display: block;
+}
+
+.bar-go:hover:not(.active) {
+    background-color: var(--hoverRed);
+    
+}
+.active:hover{
+    background-color: var(--hoverCyan);
+}
+#hline{
+    width: 94%;
+    background-color: var(--mediumBrown);
+}
+.foot-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background-color: #fff;
+
+    .rightt{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+    }
+    .grey{
+        color: gray;
+    }
+}
+.foot-content p{
+    margin: 1px;
+    font-size: 18px;    
+}
+
+#totalAmount, #LastAmount{
+    font-weight: 700;
+    color: rgb(54, 33, 4);
+}
+#totalAmount{
+    font-size: 40px;
+}
+
+@media only screen and (min-width:780px){
+    .parent-container,.header, .bars{
+        width: 500px;
+    }
+}
