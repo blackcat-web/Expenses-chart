@@ -28,8 +28,8 @@ This a challenge from  [ Frontend Mentor](https://www.frontendmentor.io/challeng
 
 ### Links
 
-- Solution URL: [solution repository](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [solution repository](https://github.com/blackcat-web/expenses-chart)
+- Live Site URL: [Live site](https://blackcat-web.github.io/expenses-chart/)
 
 ## My process
 
